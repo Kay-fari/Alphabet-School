@@ -1,0 +1,190 @@
+{% load static %}
+<!DOCTYPE html>
+<html = lang="en">
+<head>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+ 	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+ 	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css">
+ 	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css %}" type="text/css">
+ 	<link rel="stylesheet" type="text/css" href="{% static 'css/AlphaStyle.css' %}">
+	<title>The Alphabet School</title>
+</head>
+<body>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	 	<!-- Indicators -->
+	 	<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+ 			<li data-target="#myCarousel" data-slide-to="1"></li>
+ 			<li data-target="#myCarousel" data-slide-to="2"></li>
+ 			<li data-target="#myCarousel" data-slide-to="3"></li>
+ 		</ol>
+	 	<!--Wrapper for slides -->
+	 	<div class="carousel-inner" role="listbox">
+	 		<div class="item active"><img src="alpha1.jpeg" alt="Kids" ></div>
+	 		<div class="item"><img src="alpha2.jpeg" alt="Kids"></div>
+			<div class="item"><img src="alpha3.jpeg" alt="Kids"></div>
+	 		<div class="item"><img src="alpha4.jpeg" alt="Kids"></div>
+	 	</div>
+	 	<!-- left and Right controls -->
+	 	<a class="left carousel-control" href="#myCarousel" role="botton" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+	 	<a class="right carousel-control" href="#myCarousel" role="botton" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+	</div>
+	<!--Navbar-->
+	<div class="container container-fluid">
+		<div class="row">
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!--Navbar brand-->
+					<a class="navbar-brand" href="Alphabet.html"><img src="alphalogo.jpg" width="300" height="150"></a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="Alphabet.html">HOME</a></li>
+						<li class="dropdown">
+							<a class= "dropdown-toggle" data-toggle="dropdown" href="#">APPLY NOW <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="enquiry.html">INQUIRY</a></li>
+								<li class="divider"></li>
+								<li class="dropdown-header">APPLY</li>
+								<li class="divider"></li>
+									<li><a href="#">Download Application PDF</a></li>
+									<li><a href="#">Apply Online</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">LEARNING <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">CALENDER</a></li>
+								<li><a href="#">EVENTS</a></li>
+								<li><a href="#">CURRICULUM</a></li>
+								<li><a href="#">SAMPLE DAY</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle=dropdown href="about.html">ABOUT <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="about.html">ABOUT US</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+		 	</nav>
+		 </div>
+	</div>
+	 		<!--End-->
+
+	 	<section class="section1">
+	 		<div class="container text-center">
+	 			<div class="col-sm-12">
+	 				<p>The world is changing. Education is changing. Today, how children learn, is as important as what they learn. Our early learning education is in step with this natural inclination to design, engineer and innovate even from such a young age.</p><br>
+	 				<a href="about.html" class="btn btn-warning">More About us</a>
+	 			</div>
+	 		</div>
+	 	</section>
+
+	 	<section class="section2">
+	 		<div class="container text-center">
+	 			<div class="col-sm-12">
+	 				<div class="col-sm-7">
+	 					<img src="alphaSide.jpeg" class="alphaSide" width="450" height="320">
+	 				</div>
+	 				<div class="col-sm-5 text-center">
+	 					<h1><b class="orangetxt">WISDOM</b> <br>+<br> <b class="orangetxt">CREATIVITY</b> + <b class="orangetxt">RIGOR</b> <br> = <br> <b class="orangetxt">EXCELLENCE</b></h1><br>
+	 				</div>
+	 			</div>
+	 		</div>
+	 	</section>
+
+	 	<section class="section3">
+	 		<div class="container text-center">
+	 			<div class="col-sm-12">
+	 				<h1 class="orangetxt"><strong class="slim">PARENT</strong> TESTIMONIALS</h1>
+	 				<div id="txtCarousel" class="carousel slide" data-ride="carousel">
+	 					<div class="carousel-inner" role="listbox">
+	 						<div class="item active">
+	 							<p>"Our daughter loves learning at Acton. She can’t wait to share her day <br>
+	 							the moment she jumps into the car. <br>
+	 							I’m so grateful to see a love for learning come back into her eyes."</p>
+	 						</div>
+	 						<div class="item">
+	 							<p>"I would never have believed children could learn so much from each <br>
+	 							other – until I saw it with my own eyes. The lessons of self management and <br>
+	 						    self governance have prepared our fifth grade son to be a lifelong learner.”</p>
+	 						</div>
+							<div class="item">
+								<p>"Eagles play hard and work hard. Our daughter jumped seven grade <br>
+							 	levels in Math in two years, but there wasn’t any magic to it; just <br>
+							 	encouragement from her friends and lots of hard work.”</p>
+							</div>
+	 					</div>
+	 				</div>
+	 			</div>
+	 		</div>
+	 	</section>
+
+	 	<section class="section4">
+	 		<div class="container text-center">
+	 			<div class="col-sm-12">
+	 				<h1 class="bluetxt">A MORDEN SCHOOL FOR THE <b class="orangetxt">21ST CENTURY</b> CHILD</h1>
+	 				<div class="col-sm-4">
+	 					<div class="card1 img-rounded">
+	 						<a href="#"><h5 class="videoTitle"><Strong>DISRUPTIVE EDUCATION</Strong></h5>
+							<p>We are intereste din bringing out the best in your child.</p></a>
+						</div>
+	 				</div>
+	 				<div class="col-sm-4">
+	 					<div class="card2 img-rounded">
+	 						<a href="#"><h5 class="videoTitle"><Strong> THE ALPHABET SCHOOL</Strong></h5>
+							<p>An inside look at the Alphabet School Classroom.</p></a>
+						</div>
+	 				</div>
+	 				<div class="col-sm-4">
+	 					<div class="card3 img-rounded">
+	 						<a href="#"><h5 class="videoTitle"><Strong>RETHINKING SCHOOL</Strong></h5>
+							<p>A modern way of learning in the 21st Centry </p></a>
+						</div>
+	 				</div>
+	 			</div>
+	 		</div>
+	 	</section>
+
+	 	<section class="section5">
+	 		<div class="container text-center">
+	 			<div class="col-sm-12">
+	 				<a href="enquiry.html"><p class="bigWhite">BEGIN YOUR FAMILY'S JOURNEY <span class="glyphicon glyphicon-chevron-right"></span></p></a>
+	 			</div>
+	 		</div>
+	 	</section>
+
+	 	<div class="footer">
+	 		<div class="container text-left">
+	 			<div class="col-sm-4">
+	 				<a href="#"><h4>Learning</h4></a>
+	 				<a href="#"><h4>Calender</h4></a>
+	 				<a href="#"><h4>Events</h4></a>
+	 				<a href="#"><h4>Curriculum</h4></a>
+	 				<a href="#"><h4>Sample Day</h4></a>
+	 			</div>
+	 			<div class="col-sm-4">
+	 				<a href="#"><h4>Apply Now</h4></a>
+	 				<a href="#"><h4>Inquiry</h4></a>
+	 				<a href="#"><h4>Apply Online</h4></a>
+	 				<a href="#"><h4>Download Application PDF</h4></a>
+	 			</div>
+	 			<div class="col-sm-4">
+	 				<a href="#" ><h4><img src="fbIcon.png" width="30px" height="30px" class="socialicon">Facebook</h4></a>
+	 				<a href="#" ><h4><img src="igIcon.png" width="30px" height="30px" class="socialicon">Instagram</h4></a>
+	 				<p class="note">&copy; The Alphabet School 2018.</p>
+	 			</div>
+	 		</div>
+	 	</div>
+</body>
+</html>
