@@ -167,7 +167,7 @@ a:hover{
 .card1{
 	box-shadow:10px 0px 80px rgba(0,0,0, .1);
 	background-repeat: no-repeat;
-	background-image: url(alphaCard1.jpeg);
+	background-image: url('../images/alphaCard1.jpeg');
 	background-size: 500px 400px;
 	padding-top: 100px;
 	padding-bottom: 160px;
@@ -187,7 +187,7 @@ a:hover{
 .card2{
 	box-shadow:10px 0px 80px rgba(0,0,0, .1);
 	background-repeat: no-repeat;
-	background-image: url(alphaCard2.jpeg);
+	background-image: url('../images/alphaCard2.jpeg');
 	background-size: 500px 400px;
 	padding-top: 100px;
 	padding-bottom: 160px;
@@ -207,7 +207,7 @@ a:hover{
 .card3{
 	box-shadow:10px 0px 80px rgba(0,0,0, .1);
 	background-repeat: no-repeat;
-	background-image: url(alphaCard3.jpeg);
+	background-image: url('../images/alphaCard3.jpeg');
 	background-size: 500px 400px;
 	padding-top: 100px;
 	padding-bottom: 160px;

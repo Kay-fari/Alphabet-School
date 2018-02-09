@@ -14,12 +14,14 @@
 <body>
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 	 	<!-- Indicators -->
+		{% block carousel %}
 	 	<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
  			<li data-target="#myCarousel" data-slide-to="1"></li>
  			<li data-target="#myCarousel" data-slide-to="2"></li>
  			<li data-target="#myCarousel" data-slide-to="3"></li>
  		</ol>
+		{% endblock carousel %}
 	 	<!--Wrapper for slides -->
 	 	<div class="carousel-inner" role="listbox">
 	 		<div class="item active"><img src="{% static 'images/alpha1.jpeg' %}" alt="Kids" ></div>
@@ -43,7 +45,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<!--Navbar brand-->
-					<a class="navbar-brand" href="Alphabet.html"><img src="{% static 'images/alphalogo.jpg' %}" width="300" height="150"></a>
+					<a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/alphalogo.jpg' %}" width="300" height="150"></a>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navbar-right">
@@ -71,8 +73,8 @@
 						<li class="dropdown">
 							<a class="dropdown-toggle" data-toggle=dropdown href="{% url 'about' %}">ABOUT <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="about.html">ABOUT US</a></li>
-								<li><a href="faq.html">FAQ</a></li>
+								<li><a href="{% url 'about' %}">ABOUT US</a></li>
+								<li><a href="{% url 'faq' %}">FAQ</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -81,114 +83,35 @@
 		 </div>
 		{% endblock navbar %}
 	</div>
-	 		<!--End-->
+	<!--End-->
 
-	 	<section class="section1">
-	 		<div class="container text-center">
-	 			<div class="col-sm-12">
-	 				<p>The world is changing. Education is changing. Today, how children learn, is as important as what they learn. Our early learning education is in step with this natural inclination to design, engineer and innovate even from such a young age.</p><br>
-	 				<a href="about.html" class="btn btn-warning">More About us</a>
-	 			</div>
-	 		</div>
-	 	</section>
+	{% block content %}
 
-	 	<section class="section2">
-	 		<div class="container text-center">
-	 			<div class="col-sm-12">
-	 				<div class="col-sm-7">
-	 					<img src="{% static 'images/alphaSide.jpeg' %}" class="alphaSide" width="450" height="320">
-	 				</div>
-	 				<div class="col-sm-5 text-center">
-	 					<h1><b class="orangetxt">WISDOM</b> <br>+<br> <b class="orangetxt">CREATIVITY</b> + <b class="orangetxt">RIGOR</b> <br> = <br> <b class="orangetxt">EXCELLENCE</b></h1><br>
-	 				</div>
-	 			</div>
-	 		</div>
-	 	</section>
+	{% endblock content %}
 
-	 	<section class="section3">
-	 		<div class="container text-center">
-	 			<div class="col-sm-12">
-	 				<h1 class="orangetxt"><strong class="slim">PARENT</strong> TESTIMONIALS</h1>
-	 				<div id="txtCarousel" class="carousel slide" data-ride="carousel">
-	 					<div class="carousel-inner" role="listbox">
-	 						<div class="item active">
-	 							<p>"Our daughter loves learning at Acton. She can’t wait to share her day <br>
-	 							the moment she jumps into the car. <br>
-	 							I’m so grateful to see a love for learning come back into her eyes."</p>
-	 						</div>
-	 						<div class="item">
-	 							<p>"I would never have believed children could learn so much from each <br>
-	 							other – until I saw it with my own eyes. The lessons of self management and <br>
-	 						    self governance have prepared our fifth grade son to be a lifelong learner.”</p>
-	 						</div>
-							<div class="item">
-								<p>"Eagles play hard and work hard. Our daughter jumped seven grade <br>
-							 	levels in Math in two years, but there wasn’t any magic to it; just <br>
-							 	encouragement from her friends and lots of hard work.”</p>
-							</div>
-	 					</div>
-	 				</div>
-	 			</div>
-	 		</div>
-	 	</section>
-
-	 	<section class="section4">
-	 		<div class="container text-center">
-	 			<div class="col-sm-12">
-	 				<h1 class="bluetxt">A MORDEN SCHOOL FOR THE <b class="orangetxt">21ST CENTURY</b> CHILD</h1>
-	 				<div class="col-sm-4">
-	 					<div class="card1 img-rounded">
-	 						<a href="#"><h5 class="videoTitle"><Strong>DISRUPTIVE EDUCATION</Strong></h5>
-							<p>We are interested in bringing out the best in your child.</p></a>
-						</div>
-	 				</div>
-	 				<div class="col-sm-4">
-	 					<div class="card2 img-rounded">
-	 						<a href="#"><h5 class="videoTitle"><Strong> THE ALPHABET SCHOOL</Strong></h5>
-							<p>An inside look at the Alphabet School Classroom.</p></a>
-						</div>
-	 				</div>
-	 				<div class="col-sm-4">
-	 					<div class="card3 img-rounded">
-	 						<a href="#"><h5 class="videoTitle"><Strong>RETHINKING SCHOOL</Strong></h5>
-							<p>A modern way of learning in the 21st Centry </p></a>
-						</div>
-	 				</div>
-	 			</div>
-	 		</div>
-	 	</section>
-
-	 	<section class="section5">
-	 		<div class="container text-center">
-	 			<div class="col-sm-12">
-	 				<a href="{% url 'inquiry' %}"><p class="bigWhite">BEGIN YOUR FAMILY'S JOURNEY <span class="glyphicon glyphicon-chevron-right"></span></p></a>
-	 			</div>
-	 		</div>
-	 	</section>
-
-	 	<div class="footer">
-			{% block footer %}
-	 		<div class="container text-left">
-	 			<div class="col-sm-4">
-	 				<a href="#"><h4>Learning</h4></a>
-	 				<a href="#"><h4>Calender</h4></a>
-	 				<a href="#"><h4>Events</h4></a>
-	 				<a href="#"><h4>Curriculum</h4></a>
-	 				<a href="#"><h4>Sample Day</h4></a>
-	 			</div>
-	 			<div class="col-sm-4">
-	 				<a href="#"><h4>Apply Now</h4></a>
-	 				<a href="#"><h4>Inquiry</h4></a>
-	 				<a href="#"><h4>Apply Online</h4></a>
-	 				<a href="#"><h4>Download Application PDF</h4></a>
-	 			</div>
-	 			<div class="col-sm-4">
-	 				<a href="#" ><h4><img src="{% static 'images/fbIcon.png' %}" width="30px" height="30px" class="socialicon">Facebook</h4></a>
-	 				<a href="#" ><h4><img src="{% static 'images/igIcon.png' %}" width="30px" height="30px" class="socialicon">Instagram</h4></a>
-	 				<p class="note">&copy; The Alphabet School 2018.</p>
-	 			</div>
-	 		</div>
-			{% endblock footer %}
-	 	</div>
+	<div class="footer">
+		{% block footer %}
+		<div class="container text-left">
+			<div class="col-sm-4">
+				<a href="#"><h4>Learning</h4></a>
+				<a href="#"><h4>Calender</h4></a>
+				<a href="#"><h4>Events</h4></a>
+				<a href="#"><h4>Curriculum</h4></a>
+				<a href="#"><h4>Sample Day</h4></a>
+			</div>
+			<div class="col-sm-4">
+				<a href="#"><h4>Apply Now</h4></a>
+				<a href="#"><h4>Inquiry</h4></a>
+				<a href="#"><h4>Apply Online</h4></a>
+				<a href="#"><h4>Download Application PDF</h4></a>
+			</div>
+			<div class="col-sm-4">
+				<a href="#" ><h4><img src="{% static 'images/fbIcon.png' %}" width="30px" height="30px" class="socialicon">Facebook</h4></a>
+				<a href="#" ><h4><img src="{% static 'images/igIcon.png' %}" width="30px" height="30px" class="socialicon">Instagram</h4></a>
+				<p class="note">&copy; The Alphabet School 2018.</p>
+			</div>
+		</div>
+		{% endblock footer %}
+	</div>
 </body>
 </html>

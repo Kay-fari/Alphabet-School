@@ -1,1 +1,83 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="section1">
+        <div class="container text-center">
+            <div class="col-sm-12">
+                <p>The world is changing. Education is changing. Today, how children learn, is as important as what they learn. Our early learning education is in step with this natural inclination to design, engineer and innovate even from such a young age.</p><br>
+                <a href="{% url 'about' %}" class="btn btn-warning">More About us</a>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="container text-center">
+            <div class="col-sm-12">
+                <div class="col-sm-7">
+                    <img src="{% static 'images/alphaSide.jpeg' %}" class="alphaSide" width="450" height="320">
+                </div>
+                <div class="col-sm-5 text-center">
+                    <h1><b class="orangetxt">WISDOM</b> <br>+<br> <b class="orangetxt">CREATIVITY</b> + <b class="orangetxt">RIGOR</b> <br> = <br> <b class="orangetxt">EXCELLENCE</b></h1><br>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="container text-center">
+            <div class="col-sm-12">
+                <h1 class="orangetxt"><strong class="slim">PARENT</strong> TESTIMONIALS</h1>
+                <div id="txtCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <p>"Our daughter loves learning at Acton. She can’t wait to share her day <br>
+                            the moment she jumps into the car. <br>
+                            I’m so grateful to see a love for learning come back into her eyes."</p>
+                        </div>
+                        <div class="item">
+                            <p>"I would never have believed children could learn so much from each <br>
+                            other – until I saw it with my own eyes. The lessons of self management and <br>
+                            self governance have prepared our fifth grade son to be a lifelong learner.”</p>
+                        </div>
+                        <div class="item">
+                            <p>"Eagles play hard and work hard. Our daughter jumped seven grade <br>
+                            levels in Math in two years, but there wasn’t any magic to it; just <br>
+                            encouragement from her friends and lots of hard work.”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section4">
+        <div class="container text-center">
+            <div class="col-sm-12">
+                <h1 class="bluetxt">A MORDEN SCHOOL FOR THE <b class="orangetxt">21ST CENTURY</b> CHILD</h1>
+                <div class="col-sm-4">
+                    <div class="card1 img-rounded">
+                        <a href="#"><h5 class="videoTitle"><Strong>DISRUPTIVE EDUCATION</Strong></h5>
+                        <p>We are interested in bringing out the best in your child.</p></a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card2 img-rounded">
+                        <a href="#"><h5 class="videoTitle"><Strong> THE ALPHABET SCHOOL</Strong></h5>
+                        <p>An inside look at the Alphabet School Classroom.</p></a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card3 img-rounded">
+                        <a href="#"><h5 class="videoTitle"><Strong>RETHINKING SCHOOL</Strong></h5>
+                        <p>A modern way of learning in the 21st Centry </p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section5">
+        <div class="container text-center">
+            <div class="col-sm-12">
+                <a href="{% url 'inquiry' %}"><p class="bigWhite">BEGIN YOUR FAMILY'S JOURNEY <span class="glyphicon glyphicon-chevron-right"></span></p></a>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
