@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 from django.http import HttpResponseRedirect
 from django.core.mail import send_mail, get_connection
-from .forms import ContactForm
+from .forms import ContactForm, RegistrationForm
 
 from django.shortcuts import render
 from django.views.generic import TemplateView
@@ -46,6 +46,33 @@ def contact(request):
         'form':form,
     }
     return render(request, 'pages/contact.html', context)
+
+# Registration Form View
+def register(request):
+    submitted = False
+    if request.method == 'POST':
+        form = RegistrationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('/register?submitted=True')
+    else:
+        form = RegistrationForm()
+        if 'submitted' in request.GET:
+            submitted = True
+
+    context = {
+        'form':form,
+    }
+    return render(request, 'pages/register.html', context)
+
+
+
+
+
+
+
+
+
 
 
 

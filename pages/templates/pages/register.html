@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/contactStyle.css' %}">
 {% endblock customStyle %}
 
-{% block title %}Contact Us{% endblock %}
+{% block title %}Register Online{% endblock title %}
 
 {% block carousel %}
 
@@ -13,11 +13,11 @@
 {% block content %}
     <div class="container">
         {% if submitted %}
-        <p class="text-primary">Your form was successfully submitted. Thank you.</p>
+            <p class="text-primary">Your registered successfully. Thank you.</p>
         {% else %}
             <form id="contact" action="" method="post" novalidate>
               {% csrf_token %}
-              <h3>Alphabet Contact Form</h3>
+              <h3>Fill All required fields to Register</h3>
                 {{ form.as_p }}
             <fieldset>
               <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
