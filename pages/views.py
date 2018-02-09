@@ -21,6 +21,10 @@ class InquiryView(TemplateView):
 class FAQView(TemplateView):
     template_name = 'pages/faq.html'
 
+class SampleDayView(TemplateView):
+    template_name = 'pages/sampleDay.html'
+        
+
 # Contact Form view.
 def contact(request):
     submitted = False

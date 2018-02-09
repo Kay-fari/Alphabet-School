@@ -302,7 +302,7 @@ a:hover{
 	font-family: "Tw Cen MT","Gill Sans","Century Gothic";
 	background-color: #E4E4E4;
 	color: #004080;
-	padding-top: 20px;
+	padding-top: 40px;
 	padding-left: 200px;
 	padding-right: 200px;
 	padding-bottom: 50px;	
@@ -396,3 +396,14 @@ a:hover{
 .steps{
 	font-size: 21px;
 }
+
+/*******************************
+		PDF CSS SECTION
+*******************************/
+
+.pdfcontainer{
+	margin-left: 430px;
+	padding-bottom: 60px;
+}
+
+
