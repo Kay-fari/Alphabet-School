@@ -16,10 +16,9 @@
             <form id="contact" action="" method="post" novalidate>
               {% csrf_token %}
               <h3>Alphabet Contact Form</h3>
-              <h4>Contact us for custom quote</h4>
                 {{ form.as_p }}
             <fieldset>
-              <button class="btn btn-primary" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             </fieldset>
           </form>
         {% endif %}
