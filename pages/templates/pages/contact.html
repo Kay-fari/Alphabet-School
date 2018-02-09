@@ -1,25 +1,37 @@
 {% extends 'base.html' %}
-{% load static %}
-{% block customStyle %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/contactStyle.css' %}">
-{% endblock customStyle %}
+
+{% block title %}Contact Us{% endblock %}
 
 {% block carousel %}
 
 {% endblock carousel %}
 
 {% block content %}
-    <div class="container">
+    <div class="contact-container">
         {% if submitted %}
         <p class="text-primary">Your form was successfully submitted. Thank you.</p>
         {% else %}
             <form id="contact" action="" method="post" novalidate>
               {% csrf_token %}
               <h3>Alphabet Contact Form</h3>
-              <h4>Contact us for custom quote</h4>
-                {{ form.as_p }}
+                {{ form.non_field_errors }}
+                    <div class="fieldWrapper">
+                        {{ form.subject.errors }}
+                        <label for="{{ form.subject.id_for_label }}">Email subject:</label>
+                        {{ form.subject }}
+                    </div>
+                    <div class="fieldWrapper">
+                        {{ form.sender.errors }}
+                        <label for="{{ form.email.id_for_label }}">Your email address:</label>
+                        {{ form.email }}
+                    </div>
+                    <div class="fieldWrapper">
+                        {{ form.message.errors }}
+                        <label for="{{ form.message.id_for_label }}">Your message:</label>
+                        {{ form.message }}
+                    </div>
             <fieldset>
-              <button class="btn btn-primary" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             </fieldset>
           </form>
         {% endif %}

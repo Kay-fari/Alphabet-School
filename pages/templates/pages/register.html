@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Register Online{% endblock title %}
+
+{% block carousel %}
+
+{% endblock carousel %}
+
+{% block content %}
+    <div class="container">
+        {% if submitted %}
+            <p class="text-primary">Your registered successfully. Thank you.</p>
+        {% else %}
+            <form id="contact" action="" method="post" novalidate>
+              {% csrf_token %}
+              <h3>Fill All required fields to Register</h3>
+                {{ form.as_p }}
+            <fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+          </form>
+        {% endif %}
+    </div>
+{% endblock content %}
