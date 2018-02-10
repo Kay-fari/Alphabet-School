@@ -7,14 +7,107 @@
 {% endblock carousel %}
 
 {% block content %}
-    <div class="container">
+    <div class="container-reg">
         {% if submitted %}
             <p class="text-primary">Your registered successfully. Thank you.</p>
         {% else %}
             <form id="contact" action="" method="post" novalidate>
               {% csrf_token %}
               <h3>Fill All required fields to Register</h3>
-                {{ form.as_p }}
+                <fieldset>
+                    <legend>Student Info</legend>
+                    <div class="fieldWrapperReg">
+                        {{ form.stu_name.errors }}
+                        <label for="{{ form.stu_name.id_stu_name }}">Student Name:</label>
+                        {{ form.stu_name }}
+                    </div>
+                    <div class="fieldWrapperReg">
+                        {{ form.stu_name.errors }}
+                        <label for="{{ form.date_of_birth.id_date_of_birth }}">Date of Birth:</label>
+                        {{ form.date_of_birth }}
+                    </div>
+                    <div class="fieldWrapperReg">
+                        {{ form.stu_address.errors }}
+                        <label for="{{ form.stu_address.id_stu_address }}">Student Address:</label>
+                        {{ form.stu_address }}
+                    </div>
+                    <div class="fieldWrapperReg">
+                        {{ form.city.errors }}
+                        <label for="{{ form.city.id_city }}">City:</label>
+                        {{ form.city }}
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Parent/Guardian Information(Please Complete all fiedls below)</legend>
+                    <div class="fieldWrapperReg">
+                        {{ form.par_name.errors }}
+                        <label for="{{ form.par_name.id_par_name }}">Parent Name:</label>
+                        {{ form.par_name }}
+                    </div>
+                    <div class="fieldWrapperReg">
+                        {{ form.par_address.errors }}
+                        <label for="{{ form.par_address.id_par_address }}">Address:</label>
+                        {{ form.par_address }}
+                    </div>
+                    <div class="fieldWrapperReg">
+                        {{ form.home_telephone.errors }}
+                        <label for="{{ form.home_telephone.id_home_telephone }}">Home Telephone:</label>
+                        {{ form.home_telephone }}
+                    </div>
+                    <div class="fieldWrapperReg">
+                        {{ form.place_employment.errors }}
+                        <label for="{{ form.place_employment.id_place_employment }}">Place of Employment:</label>
+                        {{ form.place_employment }}
+                    </div>
+                    <div class="fieldWrapperReg">
+                        {{ form.work_telephone.errors }}
+                        <label for="{{ form.work_telephone.id_work_telephone }}">Work Telephone:</label>
+                        {{ form.work_telephone }}
+                    </div>
+                    <div class="fieldWrapperReg">
+                        {{ form.occupation.errors }}
+                        <label for="{{ form.occupation.id_occupation }}">Occupation:</label>
+                        {{ form.occupation }}
+                    </div>
+                    <div class="fieldWrapperReg">
+                        {{ form.email.errors }}
+                        <label for="{{ form.email.id_email }}">Email:</label>
+                        {{ form.email }}
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Parent/Guardian 2 Information:(Please complete all fields below)</legend>
+                    <div class="fieldWrapperReg">
+                        {{ form.par_name2.errors }}
+                        <label for="{{ form.par_name2.par_name2 }}">Parent Name:</label>
+                        {{ form.par_name2 }}
+                    </div>
+                    <div class="fieldWrapperReg">
+                        {{ form.par_address2.errors }}
+                        <label for="{{ form.par_address2.id_par_address2 }}">Address:</label>
+                        {{ form.par_address2 }}
+                    </div>
+                    <div class="fieldWrapperReg">
+                        {{ form.home_telephone2.errors }}
+                        <label for="{{ form.home_telephone2.id_home_telephone2 }}">Home Telephone:</label>
+                        {{ form.home_telephone2 }}
+                    </div>
+                    <div class="fieldWrapperReg">
+                        {{ form.work_telephone2.errors }}
+                        <label for="{{ form.work_telephone2.id_work_telephone2 }}">Work Telephone:</label>
+                        {{ form.work_telephone2 }}
+                    </div>
+                    <div class="fieldWrapperReg">
+                        {{ form.occupation2.errors }}
+                        <label for="{{ form.occupation2.id_occupation2 }}">Occupation:</label>
+                        {{ form.occupation2 }}
+                    </div>
+                    <div class="fieldWrapperReg">
+                        {{ form.email2.errors }}
+                        <label for="{{ form.email2.id_email2 }}">Email:</label>
+                        {{ form.email2 }}
+                    </div>
+                </fieldset>
             <fieldset>
               <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             </fieldset>

@@ -529,12 +529,25 @@ fieldset {
 
 fieldset {
     border: medium none !important;
-    margin: 0 0 10px;
+    margin: 0;
     min-width: 100%;
     padding: 0;
     width: 100%;
+    text-align: left;
+	margin-left: 300px;
+	margin-right: 300px;
 }
 
-/********************************
-	Registration Form Style 
-********************************/
+/* Registration Form Style */
+container-reg {
+
+}
+
+.fieldWrapperReg, legend, h3 {
+    font-size: 1.2em;
+	color: rgb(6, 106, 117);
+	padding: 2px 0 10px 0;
+	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+	font-weight: bold;
+
+}
