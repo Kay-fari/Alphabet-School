@@ -431,6 +431,10 @@ a:hover{
 	Contact Form Styling
 *******************************/
 
+.contactBtn{
+	margin-left: 0px;
+}
+
 .contact-container {
      max-width: 400px;
      width: 100%;
@@ -542,8 +546,40 @@ fieldset {
 	 Registration Form Style 
 *********************************/
 
+#id_stu_name{
+	padding-left:50px;
+}
 
-container-reg {
+.container-reg {
+	padding-right: 80px; 
+	padding-left: 250px;
+}
+
+.applySet{
+	margin-left: 140px;
+}
+
+.studentsInfo{
+	padding-right: 300px;
+	padding-left: 0px;
+}
+
+.parentInfo{
+	padding-right: 300px;
+	padding-left: 0px;
+}
+
+.parent2{
+	padding-right: 300px;
+	padding-left: 0px;
+}
+
+.submitBtn{
+	padding-right: 300px;
+	padding-left: 0px;
+}
+
+.applyhead{
 
 }
 
@@ -551,7 +587,7 @@ container-reg {
     font-size: 1.2em;
 	color: rgb(6, 106, 117);
 	padding: 2px 0 10px 0;
-	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
-	font-weight: bold;
+	font-family:"Tw Cen MT","Gill Sans","Century Gothic";
+	font-weight: ;
 
 }
