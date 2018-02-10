@@ -63,9 +63,6 @@
 							<a class= "dropdown-toggle" data-toggle="dropdown" href="#">APPLY NOW <span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="{% url 'inquiry' %}">INQUIRY</a></li>
-								<li class="divider"></li>
-								<li class="dropdown-header">APPLY</li>
-								<li class="divider"></li>
 								<li><a href="#">Download Application PDF</a></li>
 								<li><a href="{% url 'register' %}">Apply Online</a></li>
 							</ul>
@@ -99,8 +96,8 @@
 
 	{% endblock content %}
 
+	{% block footer %}
 	<div class="footer">
-		{% block footer %}
 		<div class="container text-left">
 			<div class="col-sm-4">
 				<a href="#"><h4>Learning</h4></a>
@@ -121,7 +118,7 @@
 				<p class="note">&copy; The Alphabet School 2018.</p>
 			</div>
 		</div>
-		{% endblock footer %}
 	</div>
+	{% endblock footer %}
 </body>
 </html>
