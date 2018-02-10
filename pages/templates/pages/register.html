@@ -13,9 +13,12 @@
         {% else %}
             <form id="contact" action="" method="post" novalidate>
               {% csrf_token %}
-              <h3>Fill All required fields to Register</h3>
-                <fieldset>
-                    <legend>Student Info</legend>
+              <h2 class="text-center">FILL ALL REQUIRED FEILDS TO REGISTER</h2>
+              
+              <!--StudentsInfo-->
+              <div class="studentsInfo">
+              <fieldset class="applySet">
+                  <legend>Student Info</legend>
                     <div class="fieldWrapperReg">
                         {{ form.stu_name.errors }}
                         <label for="{{ form.stu_name.id_stu_name }}">Student Name:</label>
@@ -36,9 +39,14 @@
                         <label for="{{ form.city.id_city }}">City:</label>
                         {{ form.city }}
                     </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Parent/Guardian Information(Please Complete all fiedls below)</legend>
+              </div>
+              </fieldset><br>
+              <!--End-->
+
+              <!--ParentInfo-->
+              <div class="parentInfo">
+                <fieldset class="applySet">
+                    <legend>Parent/Guardian Information(Please Complete all fields below)</legend>
                     <div class="fieldWrapperReg">
                         {{ form.par_name.errors }}
                         <label for="{{ form.par_name.id_par_name }}">Parent Name:</label>
@@ -75,7 +83,12 @@
                         {{ form.email }}
                     </div>
                 </fieldset>
-                <fieldset>
+               </div><br>
+               <!--End-->
+
+               <!--Parent2--> 
+               <div class="parent2">
+                <fieldset class="applySet">
                     <legend>Parent/Guardian 2 Information:(Please complete all fields below)</legend>
                     <div class="fieldWrapperReg">
                         {{ form.par_name2.errors }}
@@ -108,10 +121,19 @@
                         {{ form.email2 }}
                     </div>
                 </fieldset>
-            <fieldset>
-              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-            </fieldset>
+              </div><br>
+              <!--End-->
+
+            <!--Button-->
+            <div class="submitBtn">
+              <fieldset class="applySet">
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+              </fieldset>
+            </div>
+            <!--End-->
+
           </form>
+      </div>
         {% endif %}
     </div>
 {% endblock content %}
