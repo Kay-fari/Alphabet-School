@@ -138,7 +138,7 @@ a:hover{
 
 .section2{
 	font-size: 22px;
-	font-family: Dubai light;
+	font-family: "Dubai light";
 	color: #004080;
 }
 
@@ -282,6 +282,27 @@ a:hover{
 	background-color: #004080;
 }
 
+/*******************************
+		GALLERY CSS SECTION
+*******************************/
+
+.row{
+	padding-top: 50px;
+}
+
+.gal{
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+.gal:hover{
+	transform: scale(1.05);
+}
+
+.galcontainer{
+	padding-left: 220px;
+	padding-bottom: 80px;
+}
 
 /*******************************
 		ABOUT CSS SECTION
@@ -406,7 +427,10 @@ a:hover{
 	padding-bottom: 60px;
 }
 
-/* Contact Form Styling */
+/******************************
+	Contact Form Styling
+*******************************/
+
 .contact-container {
      max-width: 400px;
      width: 100%;
@@ -511,4 +535,6 @@ fieldset {
     width: 100%;
 }
 
-/* Registration Form Style */
+/********************************
+	Registration Form Style 
+********************************/

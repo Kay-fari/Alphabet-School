@@ -23,6 +23,10 @@ class FAQView(TemplateView):
 
 class SampleDayView(TemplateView):
     template_name = 'pages/sampleDay.html'
+
+class GalleryView(TemplateView):
+    template_name = 'pages/gallery.html'
+        
         
 
 # Contact Form view.

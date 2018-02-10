@@ -1,17 +1,122 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
 
-<div class="col-sm-9">
-	<div class"row">
-		<h1 class="text-center">OUR <strong>GALLERY</h1><br>
+<div class"row">
+	<h1 class="text-center">OUR <strong>GALLERY</h1><br>
+	<div class="galcontainer">
 		<div class="case">
-			<a href="#"></a>
-			<a href="#"></a>
-			<a href="#"></a>
-			<a href="#"></a>
+			<a data-toggle="modal" data-target="#myModal1">
+				<img src="{% static 'images/image1.jpeg' %}" class="gal img-rounded" width="300" height="200"></a>
+			<a data-toggle="modal" data-target="#myModal2">
+				<img src="{% static 'images/image3.jpeg' %}" class="gal img-rounded" width="300" height="200"></a>
+			<a data-toggle="modal" data-target="#myModal3">
+				<img src="{% static 'images/image2.jpeg' %}" class="gal img-rounded" width="300" height="200"></a>
+			<a data-toggle="modal" data-target="#myModal4">
+				<img src="{% static 'images/image4.jpeg' %}" class="gal img-rounded" width="300" height="200"></a>
+			<a data-toggle="modal" data-target="#myModal5">
+				<img src="{% static 'images/image5.jpeg' %}" class="gal img-rounded" width="300" height="200"></a>
+			<a data-toggle="modal" data-target="#myModal6">
+				<img src="{% static 'images/image6.jpeg' %}" class="gal img-rounded" width="300" height="200"></a>
+			<a data-toggle="modal" data-target="#myModal7">
+				<img src="{% static 'images/image7.jpeg' %}" class="gal img-rounded" width="300" height="200"></a>
+			<a data-toggle="modal" data-target="#myModal8">
+				<img src="{% static 'images/image8.jpeg' %}" class="gal img-rounded" width="300" height="200"></a>
+			<a data-toggle="modal" data-target="#myModal9">
+				<img src="{% static 'images/image9.jpeg' %}" class="gal img-rounded" width="300" height="200"></a>
+			<a data-toggle="modal" data-target="#myModal10">
+				<img src="{% static 'images/image10.jpeg' %}" class="gal img-rounded" width="300" height="200"></a>
+			<a data-toggle="modal" data-target="#myModal11">
+				<img src="{% static 'images/image11.jpeg' %}" class="gal img-rounded" width="300" height="200"></a>
+			<a data-toggle="modal" data-target="#myModal12">
+				<img src="{% static 'images/image12.jpeg' %}" class="gal img-rounded" width="300" height="200"></a>
+			<a data-toggle="modal" data-target="#myModal13">
+				<img src="{% static 'images/image14.jpeg' %}" class="gal img-rounded" width="300" height="200"></a>
+			<a data-toggle="modal" data-target="#myModal13">
+				<img src="{% static 'images/image15.jpeg' %}" class="gal img-rounded" width="300" height="200"></a>
+		</div>
 		</div>
 	</div>
 </div>
+
+
+<!--Modal Section-->
+<div class="modal fade" id="myModal8" role="dialog">
+	<div class="modal-dailog modal-dialog-centered">
+		<!--Modal Content-->
+		<div class="modal-body text-center">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<img src="{% static 'images/image8.jpeg' %}" class="img-rounded" width="1000" height="700">
+		</div>
+	</div>
+</div> 
+
+<!--Modal Section-->
+<div class="modal fade" id="myModal9" role="dialog">
+	<div class="modal-dailog modal-dialog-centered">
+		<!--Modal Content-->
+		<div class="modal-body text-center">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<img src="{% static 'images/image9.jpeg' %}" class="img-rounded" width="1000" height="700">
+		</div>
+	</div>
+</div> 
+
+<!--Modal Section-->
+<div class="modal fade" id="myModal10" role="dialog">
+	<div class="modal-dailog modal-dialog-centered">
+		<!--Modal Content-->
+		<div class="modal-body text-center">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<img src="{% static 'images/image10.jpeg' %}" class="img-rounded" width="1000" height="700">
+		</div>
+	</div>
+</div> 
+
+<!--Modal Section-->
+<div class="modal fade" id="myModal11" role="dialog">
+	<div class="modal-dailog modal-dialog-centered">
+		<!--Modal Content-->
+		<div class="modal-body text-center">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<img src="{% static 'images/image11.jpeg' %}" class="img-rounded" width="1000" height="700">
+		</div>
+	</div>
+</div> 
+
+<!--Modal Section-->
+<div class="modal fade" id="myModal12" role="dialog">
+	<div class="modal-dailog modal-dialog-centered">
+		<!--Modal Content-->
+		<div class="modal-body text-center">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<img src="{% static 'images/image12.jpeg' %}" class="img-rounded" width="1000" height="700">
+		</div>
+	</div>
+</div> 
+
+<!--Modal Section-->
+<div class="modal fade" id="myModal14" role="dialog">
+	<div class="modal-dailog modal-dialog-centered">
+		<!--Modal Content-->
+		<div class="modal-body text-center">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<img src="{% static 'images/image14.jpeg' %}" class="img-rounded" width="1000" height="700">
+		</div>
+	</div>
+</div> 
+
+<!--Modal Section-->
+<div class="modal fade" id="myModal15" role="dialog">
+	<div class="modal-dailog modal-dialog-centered">
+		<!--Modal Content-->
+		<div class="modal-body text-center">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<img src="{% static 'images/image15.jpeg' %}" class="img-rounded" width="1000" height="700">
+		</div>
+	</div>
+</div> 
 
 {% endblock content %}
