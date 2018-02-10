@@ -299,6 +299,14 @@ a:hover{
 }
 
 /*******************************
+	WELCOME PAGE CSS SECTION
+*******************************/
+
+.screen{
+	background-image: url('../images/Collage.jpg');
+}
+
+/*******************************
 		GALLERY CSS SECTION
 *******************************/
 
@@ -576,10 +584,6 @@ fieldset {
 /*********************************
 	 Registration Form Style 
 *********************************/
-
-#id_stu_name{
-	padding-left:50px;
-}
 
 .container-reg {
 	padding-right: 80px; 
