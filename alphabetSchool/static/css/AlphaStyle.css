@@ -503,3 +503,19 @@ fieldset {
 }
 
 /* Registration Form Style */
+container-reg {
+    margin: 400px;
+}
+
+.fieldWrapperReg, legend, h3 {
+    font-size: 1.2em;
+	color: rgb(6, 106, 117);
+	padding: 2px 0 10px 0;
+	font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;
+	font-weight: bold;
+	text-align: left;
+	padding-bottom: 30px;
+	margin-left: 300px;
+	margin-right: 400px;
+}
+
