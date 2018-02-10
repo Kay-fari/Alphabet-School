@@ -26,6 +26,9 @@ class SampleDayView(TemplateView):
 
 class GalleryView(TemplateView):
     template_name = 'pages/gallery.html'
+
+class WelcomePageView(TemplateView):
+    template_name = 'pages/welcomePage.html'
         
         
 

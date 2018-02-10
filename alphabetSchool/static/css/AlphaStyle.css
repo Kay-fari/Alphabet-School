@@ -99,6 +99,21 @@ a:hover{
 	color:#E6B800 !important;
 }
 
+/* Texts on Carousel */
+.text-wrapper {
+    width: 100%;
+    position: relative;
+
+}
+
+.text-wrapper h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 10vm;
+    font-family: 'lobster', 'cursize';
+
+}
+
 /* this is for the button on section1 */
 .btn{
 	padding:10px 15px;
@@ -256,6 +271,7 @@ a:hover{
 
 .videoTitle{
 	font-family: Arial Black;
+	font-size: 1em;
 	color:#fff;
 }
 

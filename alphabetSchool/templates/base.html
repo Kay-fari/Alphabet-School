@@ -26,7 +26,12 @@
  		</ol>
 	 	<!--Wrapper for slides -->
 	 	<div class="carousel-inner" role="listbox">
-	 		<div class="item active"><img src="{% static 'images/alpha1.jpeg' %}" alt="Kids"></div>
+	 		<div class="item active">
+				<img src="{% static 'images/alpha1.jpeg' %}" alt="Kids">
+				<div class="text-wrapper">
+					<h1>Sample Text</h1>
+				</div>
+			</div>
 	 		<div class="item"><img src="{% static 'images/alpha2.jpeg' %}" alt="Kids"></div>
 			<div class="item"><img src="{% static 'images/alpha3.jpeg' %}" alt="Kids"></div>
 	 		<div class="item"><img src="{% static 'images/alpha4.jpeg' %}" alt="Kids"></div>
@@ -58,9 +63,6 @@
 							<a class= "dropdown-toggle" data-toggle="dropdown" href="#">APPLY NOW <span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="{% url 'inquiry' %}">INQUIRY</a></li>
-								<li class="divider"></li>
-								<li class="dropdown-header">APPLY</li>
-								<li class="divider"></li>
 								<li><a href="#">Download Application PDF</a></li>
 								<li><a href="{% url 'register' %}">Apply Online</a></li>
 							</ul>
@@ -94,8 +96,8 @@
 
 	{% endblock content %}
 
+	{% block footer %}
 	<div class="footer">
-		{% block footer %}
 		<div class="container text-left">
 			<div class="col-sm-4">
 				<a href="#"><h4>Learning</h4></a>
@@ -116,7 +118,7 @@
 				<p class="note">&copy; The Alphabet School 2018.</p>
 			</div>
 		</div>
-		{% endblock footer %}
 	</div>
+	{% endblock footer %}
 </body>
 </html>
