@@ -1,1 +1,41 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="Container">
+	 	<div class="enquirySection1">
+	 		<div class="Container col-sm-12">
+				<h2 class="text-center"><b>Admission</b></h2>
+	 			<p class="enqtxt text-left">The Alphabet School offers rolling enrollement throughout the year as long as space is available and aims to make the admission process a pleasant, straightforward experience. <br>Please note that admission meetings and school tours are available by <b>appointment only</b>.<br> To inquire about availability of places or to visit Aphabet, please contact the Amissions office +233 540 38 90 99.</p>
+		 		<div class="apply_items enqtxt">
+		 			<p><b>To apply, please submit the following necessary items:</b></p>
+		 			<p><span class="glyphicon glyphicon-ok"></span> Completed and signed applicaiton forms</p>
+		 			<p><span class="glyphicon glyphicon-ok"></span> 2 passport size photographs of child and each parent/guardian</p>
+		 			<p><span class="glyphicon glyphicon-ok"></span> Photocopy of applicant's Birth Certificate</p><br>
+		 		</div>
+			</div>
+
+			<div class="apply">
+				<a href="{% url 'register' %}" class="btn btn-info">Apply online</a>
+				<a href="../uploads/Alphabet-School-Forms.pdf" class="btn btn-warning">Download Application PDF</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="container">
+		<div class="enquirySection2">
+			<div class="col-sm-12 text-center">
+				<h2>ADMISSION <strong>PROCESS</strong></h2>
+			</div>
+			<p class="steps"> Step 1 </p>
+			<P>Parents/Guardians need to submit all required forms and documents in order to be considered for admissions.<br> Applications are considered in chronological order ro receipt. Each applicant is reviewed individually and independently</P>
+
+			<p class="steps"> Step 2 </p>
+			<p>Once the required forms and documents have been submitted,<br> the Admissions Office will review the applicaiton file and families will then be notified by email of teh outcome.</p>
+
+			<p class="steps"> Step 3 </p>
+			<p>When a place is offered, the required fees will then have to be paid.</p>
+		</div>
+	</section>
+
+{% endblock content %}
