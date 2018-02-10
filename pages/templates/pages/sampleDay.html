@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="#">
+	<h2 class="text-center">SAMPLE <strong>DAY</strong></h2>
+	<br>
+	<div class="pdfcontainer">
+		<embed src="{% static 'pdf/sampleDay.pdf' %}" width="800" height="900" type="SamleDay"></embed>
+	</div>
+</div>
+
+
+{% endblock content %}
