@@ -3,6 +3,7 @@ from . import views
 
 
 urlpatterns = [
+	re_path(r'^curriculum$', views.CurriculumView.as_view(), name='curriculum'),
 	re_path(r'^gallery$', views.GalleryView.as_view(), name='gallery'),
 	re_path(r'^sampleDay$', views.SampleDayView.as_view(), name='sampleDay'),
     re_path(r'^register$', views.register, name='register'),

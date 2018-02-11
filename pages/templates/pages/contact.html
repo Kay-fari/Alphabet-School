@@ -7,13 +7,28 @@
 {% endblock carousel %}
 
 {% block content %}
+
+<style type="text/css">
+    .add{
+        color: #004080;
+    }
+</style>
+
     <div class="contact-container">
         {% if submitted %}
         <p class="text-primary">Your form was successfully submitted. Thank you.</p>
         {% else %}
             <form id="contact" action="" method="post" novalidate>
               {% csrf_token %}
-              <h3>Alphabet Contact Form</h3>
+            <div class="text-center">
+              <h3> Contact The Alphabet School</h3>
+                <div class="add">
+                    <p>Hse 96/2 East Adenta</p>
+                    <p>P.O.Box CT 422 Cantoments, Accra</p>
+                    <p>Email abc.xyzcampus@gmail.com</p>
+                    <p>Tel. 0540 380 099</p><br>
+                </div>
+            </div>
                 {{ form.non_field_errors }}
                     <div class="fieldWrapper">
                         {{ form.subject.errors }}
