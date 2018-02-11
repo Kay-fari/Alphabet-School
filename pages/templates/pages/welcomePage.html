@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/lightbox.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+	<link rel="stylesheet" href="{% static 'css/lightbox.css' %}">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/AlphaStyle.css' %}">
+	<title>{% block title %}The Alphabet School{% endblock title %}</title>
+</head>
+
+<style type="text/css">
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-image:url('../static/images/welcome.jpeg');
+	background-repeat: no-repeat;
+	width: 100%; 
+	height: auto;
+}
+
+</style>
+
+<body>
+
+	<div class="welcome">
+		<h1>Welcome to <strong>Alphabet</strong></h1>
+		<h4>Great start, great future</h4>
+		<a href="{% url 'index' %}" class="btn btn-info btn-lg">click for more</a>
+	</div>
+
+</body>
+</html>
