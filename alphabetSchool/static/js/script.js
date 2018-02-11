@@ -1,9 +1,10 @@
 // Javascript
 
 $(function() {
-    $('.welcome').hide();
+
 });
 
 $(document).ready(function() {
-    $('.welcome').slideUp();
+    $('.welcome').hide();
+    $('.welcome').show(2000);
 });
