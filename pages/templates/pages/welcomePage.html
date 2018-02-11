@@ -30,15 +30,25 @@
 	}
 
 	div.welcome {
+		width: 300px;
+		height: 200px;
 
+		position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding-left: -100px;
+		padding-right: -100px;
+		margin: auto;
 	}
 </style>
 
 <body>
 	<div class="welcome">
-		<h1>Welcome to <strong>Alphabet</strong></h1>
-		<h4>Great start, great future</h4>
-		<a href="{% url 'index' %}" class="btn btn-info btn-lg">click for more</a>
+		<h1>Welcome to <strong>ALPHABET</strong></h1>
+		<h4>Great Start, Great Future</h4>
+		<a href="{% url 'index' %}" class="btn btn-info btn-lg">CLICK TO VISIT HOME</a>
 	</div>
 
 </body>
