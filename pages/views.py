@@ -29,7 +29,9 @@ class GalleryView(TemplateView):
 
 class WelcomePageView(TemplateView):
     template_name = 'pages/welcomePage.html'
-        
+
+class CurriculumView(TemplateView):
+    template_name = 'pages/curriculum.html'        
         
 
 # Contact Form view.

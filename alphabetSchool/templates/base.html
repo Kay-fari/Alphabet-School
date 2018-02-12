@@ -52,7 +52,7 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="{% url 'index' %}">HOME</a></li>
+						<li class=""><a href="{% url 'index' %}">HOME</a></li>
 						<li><a href="{% url 'gallery' %}">GALLERY</a></li>
 						<li class="dropdown">
 							<a class= "dropdown-toggle" data-toggle="dropdown" href="#">APPLY NOW <span class="caret"></span></a>
@@ -66,7 +66,7 @@
 							<ul class="dropdown-menu">
 								<li><a href="#">CALENDER</a></li>
 								<li><a href="#">EVENTS</a></li>
-								<li><a href="#">CURRICULUM</a></li>
+								<li><a href="{% url 'curriculum' %}">CURRICULUM</a></li>
 								<li><a href="{% url 'sampleDay' %}">SAMPLE DAY</a></li>
 							</ul>
 						</li>
@@ -97,18 +97,17 @@
 				<a href="#"><h4>LEARNING</h4></a>
 				<a href="#"><h4>CALENDAR</h4></a>
 				<a href="#"><h4>EVENTS</h4></a>
-				<a href="#"><h4>CURRICULUM</h4></a>
-				<a href="#"><h4>SAMPLE DAY</h4></a>
+				<a href="{% url 'curriculum' %}"><h4>CURRICULUM</h4></a>
+				<a href="{% url 'sampleDay' %}"><h4>SAMPLE DAY</h4></a>
 			</div>
 			<div class="col-sm-4">
-				<a href="#"><h4>APPLY NOW</h4></a>
+				<a href="{% url 'register' %}"><h4>APPLY NOW</h4></a>
 				<a href="{% url 'inquiry' %}"><h4>INQUIRY</h4></a>
 				<a href="{% url 'register' %}"><h4>APPLY ONLINE</h4></a>
-				<a href="#"><h4>DOWNLOAD APPLICATION PDF</h4></a>
 			</div>
 			<div class="col-sm-4">
-				<a href="#" ><h4><img src="{% static 'images/#.png' %}" width="30px" height="30px" class="socialicon">FACEBOOK</h4></a>
-				<a href="#" ><h4><img src="{% static 'images/#.png' %}" width="30px" height="30px" class="socialicon">INSTAGRAM</h4></a>
+				<!--<a href="#" ><h4><img src="{% static 'images/#.png' %}" width="30px" height="30px" class="socialicon">FACEBOOK</h4></a>
+				<a href="#" ><h4><img src="{% static 'images/#.png' %}" width="30px" height="30px" class="socialicon">INSTAGRAM</h4></a>-->
 				<p class="note">&copy; THE ALPHABET SCHOOL 2018.</p>
 			</div>
 		</div>

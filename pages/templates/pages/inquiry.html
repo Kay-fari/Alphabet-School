@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
-{% load static %}
+
+{% block title %}Inquiry{% endblock title %}
 
 {% block content %}
     <section class="Container">
@@ -17,7 +18,8 @@
 
 			<div class="apply">
 				<a href="{% url 'register' %}" class="btn btn-info">Apply online</a>
-				<a href="../uploads/Alphabet-School-Forms.pdf" class="btn btn-warning">Download Application PDF</a>
+				{% load static %}
+				<a href="{% static 'pdf/Alphabet-School-Forms.pdf' %}" class="btn btn-warning">Download Application PDF</a>
 			</div>
 		</div>
 	</section>
