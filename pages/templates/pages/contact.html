@@ -7,13 +7,6 @@
 {% endblock carousel %}
 
 {% block content %}
-    <div class="col-sm-6">
-        <h2>Contact Details</h2>
-        <p>Hse 96/2 East Adenta</p>
-        <p>P.O. Box CT 422 Cantoments, Accra</p>
-        <p>Email: abc.xyzcampus@gmail.com</p>
-        <p>Tel: 0540389099</p>
-    </div>
 
 <div class="contact-container" style="margin-right: 200px;"></div>
 
@@ -41,7 +34,7 @@
                 {{ form.non_field_errors }}
                     <div class="fieldWrapper">
                         {{ form.subject.errors }}
-                        <label for="{{ form.subject.id_for_label }}">Email subject:</label>
+                        <label for="{{ form.subject.id_for_label }}">Subject:</label>
                         {{ form.subject }}
                     </div>
                     <div class="fieldWrapper">
