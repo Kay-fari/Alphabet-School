@@ -21,6 +21,7 @@
     	margin:0;
     	padding:0;
     	background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../static/images/welcome.jpeg") no-repeat center center fixed;
+    	background-image:-webkit-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../static/images/welcome.jpeg") no-repeat center center fixed;
     	-webkit-background-size: cover;
     	-moz-background-size: cover;
     	-o-background-size: cover;
@@ -29,7 +30,7 @@
 	div.welcome {
 
 		width: 1200px;
-		height: 200px;
+		height: 200px;s
 
 		position: absolute;
 		top:0;
@@ -42,12 +43,14 @@
 	}
 
 	.welcome{
-		margin-top: 120px;
+		/*margin-top: 100px;*/
 	}
 
 	.txt{
 		font-size: 100px;
 		color:#fff;
+		padding-top: 300px;
+		margin-top: 100px;
 	}
 
 	.small{
@@ -97,7 +100,7 @@
 
 <body>
 	<div class="welcome">
-		<h1 class="txt text-center">Welcome to <strong>ALPHABET<strong></h1>
+		<h1 class="txt text-center">Welcome to <strong>Alphabet<strong></h1>
 		<h2 class="small text-center">Great Start, Great Future</h2><br>
 		<a href="{% url 'index' %}" class="btn btn-info btn-lg">CLICK TO VISIT HOME</a>
 	</div>
