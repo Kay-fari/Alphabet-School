@@ -28,4 +28,4 @@ class Register(models.Model):
     email2 = models.EmailField()
 
     def __str__(self):
-        return self.stu_name
+        return str(self.stu_name)
