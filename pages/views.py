@@ -71,8 +71,11 @@ def register(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
         if form.is_valid():
+            form.save(commit=False)
             form.save()
+
             return HttpResponseRedirect('/register?submitted=True')
+
     else:
         form = RegistrationForm()
         if 'submitted' in request.GET:
@@ -80,7 +83,9 @@ def register(request):
 
     context = {
         'form':form,
+        'submitted':submitted,
     }
+
     return render(request, 'pages/register.html', context)
 
 

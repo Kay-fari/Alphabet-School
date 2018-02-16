@@ -6,9 +6,13 @@ from .models import Register
 # Register your models here.
 
 class RegisterAdmin(admin.ModelAdmin):
-    list_display = ('stu_name', 'stu_address', 'city', 'par_name',
+    list_display = ('id', 'stu_name', 'date_of_birth', 'stu_address', 'city', 'par_name',
                     'par_address', 'home_telephone', 'work_telephone',
                     'occupation', 'email', )
+    ordering = ('id',)
+    search_fields = ('stu_name',)
+    list_filter = ('stu_name',)
+
     fieldsets = (
         (None, {
             'fields':('stu_name', 'date_of_birth', 'stu_address', 'city'),

@@ -14,6 +14,7 @@
             <form id="contact" action="" method="post" novalidate>
               {% csrf_token %}
               <h2 class="text-center">FILL ALL FEILDS TO REGISTER</h2>
+                <!--{{ form.as_p }}-->
               <!--StudentsInfo-->
               <div class="studentsInfo">
               <fieldset class="applySet">
@@ -24,9 +25,9 @@
                         {{ form.stu_name }}
                     </div>
                     <div class="fieldWrapperReg">
-                        {{ form.stu_name.errors }}
-                        <label for="{{ form.date_of_birth.id_date_of_birth }}">Date of Birth:</label>
-                        {{ form.date_of_birth }}
+                        {{ form.date_of_birth.errors }}
+                        <label for="{{ form.date_of_birth.id_date_of_birth }}">Date of Birth:</label><br>
+                        <input type="date" name="date_of_birth">
                     </div>
                     <div class="fieldWrapperReg">
                         {{ form.stu_address.errors }}
