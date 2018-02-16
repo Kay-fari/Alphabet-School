@@ -2,10 +2,15 @@
 from __future__ import unicode_literals
 from django.http import HttpResponseRedirect
 from django.core.mail import send_mail, get_connection
+from django.urls import reverse_lazy
+
+from pages.models import Register
 from .forms import ContactForm, RegistrationForm
 
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, CreateView
+
+
 # Create your views here.
 
 

@@ -11,7 +11,7 @@ class RegisterAdmin(admin.ModelAdmin):
                     'occupation', 'email', )
     fieldsets = (
         (None, {
-            'fields':('stu_name', 'stu_address', 'city'),
+            'fields':('stu_name', 'date_of_birth', 'stu_address', 'city'),
         }),
         ('Parent/Guardian Information 1', {
             'classes':('collapse',),
@@ -20,7 +20,7 @@ class RegisterAdmin(admin.ModelAdmin):
                       'occupation', 'email'),
         }),
         ('Parent/Guardian Information II', {
-            'classes':('collapse'),
+            'classes':('collapse',),
             'fields':('par_name2', 'par_address2', 'home_telephone2',
                       'place_employment2', 'work_telephone2',
                       'occupation2', 'email2'),

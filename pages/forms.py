@@ -2,12 +2,13 @@ from django import forms
 from django.forms import ModelForm
 from .models import Register
 
-
+# Contact Form
 class ContactForm(forms.Form):
     subject = forms.CharField(max_length=60)
     email = forms.EmailField(label='Your email address', required=True)
     message = forms.CharField(widget=forms.Textarea)
 
+# Registratin Form
 class RegistrationForm(ModelForm):
     required_css_class = 'required'
     class Meta:
