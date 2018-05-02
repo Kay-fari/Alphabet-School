@@ -2,13 +2,10 @@
 from __future__ import unicode_literals
 from django.http import HttpResponseRedirect
 from django.core.mail import send_mail, get_connection
-from django.urls import reverse_lazy
-
-from pages.models import Register
 from .forms import ContactForm, RegistrationForm
 
 from django.shortcuts import render
-from django.views.generic import TemplateView, CreateView
+from django.views.generic import TemplateView
 
 
 # Create your views here.
@@ -51,8 +48,9 @@ def contact(request):
                 cd['subject'],
                 cd['message'],
                 cd.get('email', 'noreply@example.com'),
-                ['siteownder@example.com'],
+                ['xylaray37@gmail.com'],
                 connection=con,
+                fail_silently=False,
             )
             return HttpResponseRedirect('/contact?submitted=True')
     else:
@@ -62,6 +60,7 @@ def contact(request):
 
     context = {
         'form':form,
+        'submitted':submitted,
     }
     return render(request, 'pages/contact.html', context)
 
