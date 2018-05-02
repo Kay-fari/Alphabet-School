@@ -9,16 +9,16 @@
 {% block content %}
     <div class="container-reg">
         {% if submitted %}
-            <p class="text-primary">Your registered successfully. Thank you.</p>
+            <p class="text-primary" style="margin-top:200px; padding-bottom:100px;
+            font-size:1.2em;">You registered successfully. Thank you.</p>
         {% else %}
             <form id="contact" action="" method="post" novalidate>
               {% csrf_token %}
               <h2 class="text-center">FILL ALL FEILDS TO REGISTER</h2>
-                <!--{{ form.as_p }}-->
               <!--StudentsInfo-->
               <div class="studentsInfo">
               <fieldset class="applySet">
-                  <legend>Student Info</legend>
+                  <legend style="font-size:2.2em;">Student Info</legend>
                     <div class="fieldWrapperReg">
                         {{ form.stu_name.errors }}
                         <label for="{{ form.stu_name.id_stu_name }}">Student Name:</label>
@@ -27,7 +27,7 @@
                     <div class="fieldWrapperReg">
                         {{ form.date_of_birth.errors }}
                         <label for="{{ form.date_of_birth.id_date_of_birth }}">Date of Birth:</label><br>
-                        <input type="date" name="date_of_birth">
+                        {{ form.date_of_birth }}
                     </div>
                     <div class="fieldWrapperReg">
                         {{ form.stu_address.errors }}
@@ -46,7 +46,7 @@
               <!--ParentInfo-->
               <div class="parentInfo">
                 <fieldset class="applySet">
-                    <legend>Parent/Guardian Information(Please Complete all fields below)</legend>
+                    <legend style="font-size:2.2em;">Parent/Guardian Information(Please Complete all fields below)</legend>
                     <div class="fieldWrapperReg">
                         {{ form.par_name.errors }}
                         <label for="{{ form.par_name.id_par_name }}">Parent Name:</label>
@@ -89,7 +89,7 @@
                <!--Parent2-->
                <div class="parent2">
                 <fieldset class="applySet">
-                    <legend>Parent/Guardian 2 Information:(Please complete all fields below)</legend>
+                    <legend style="font-size:2.2em;">Parent/Guardian 2 Information:(Please complete all fields below)</legend>
                     <div class="fieldWrapperReg">
                         {{ form.par_name2.errors }}
                         <label for="{{ form.par_name2.par_name2 }}">Parent Name:</label>

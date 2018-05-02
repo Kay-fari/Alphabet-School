@@ -18,7 +18,8 @@
 
     <div class="contact-container">
         {% if submitted %}
-        <p class="text-primary">Your form was successfully submitted. Thank you.</p>
+            <p class="text-primary" style="margin-top:200px; padding-bottom:100px;
+            font-size:1.2em;">Your form was successfully submitted. Thank you.</p>
         {% else %}
             <form id="contact" action="" method="post" novalidate>
               {% csrf_token %}
